@@ -20,17 +20,6 @@
         </configuration>
       </plugin>
         <plugin>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <configuration>
-            <source>${project.java.version}</source>
-            <target>${project.java.version}</target>
-            <encoding>${project.build.sourceEncoding}</encoding>
-            <descriptorRefs>
-              <descriptorRef>jar-with-dependencies</descriptorRef>
-            </descriptorRefs>
-          </configuration>
-        </plugin>
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
@@ -68,7 +57,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
-            <version>1.15.1-R0.1-SNAPSHOT</version>
+            <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

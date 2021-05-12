@@ -16,6 +16,8 @@ import org.bukkit.event.weather.WeatherChangeEvent;
 
 import fr.leomelki.loupgarou.classes.LGPlayer;
 
+import static fr.leomelki.loupgarou.classes.LGPlayer.thePlayer;
+
 public class CancelListener implements Listener{
 	@EventHandler
 	public void onPluie(WeatherChangeEvent e) {
@@ -58,12 +60,12 @@ public class CancelListener implements Listener{
 	}
 	@EventHandler
 	public void onClickInventory(InventoryClickEvent e) {
-		if(LGPlayer.thePlayer((Player)e.getWhoClicked()).getGame() != null)
+		if(thePlayer((Player)e.getWhoClicked()).getGame() != null)
 			e.setCancelled(true);
 	}
 	@EventHandler
 	public void onClickInventory(PlayerSwapHandItemsEvent e) {
-		if(LGPlayer.thePlayer(e.getPlayer()).getGame() != null)
+		if(thePlayer(e.getPlayer()).getGame() != null)
 			e.setCancelled(true);
 	}
 }

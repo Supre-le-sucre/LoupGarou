@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LoupGarou_NevaPlay">
+    <output-path>$PROJECT_DIR$/out/artifacts/LoupGarou_NevaPlay</output-path>
+    <root id="archive" name="LoupGarou_NevaPlay.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/src/plugin.yml" />
+      <element id="module-output" name="LoupGarou" />
+    </root>
+  </artifact>
+</component>

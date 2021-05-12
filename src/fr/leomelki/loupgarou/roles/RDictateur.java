@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_15_R1.inventory.CraftInventoryCustom;
+import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftInventoryCustom;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.EventHandler;

@@ -12,8 +12,8 @@ import java.util.StringJoiner;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_15_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_15_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_16_R3.CraftWorld;
+import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
 import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -34,13 +34,13 @@ import fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
 import fr.leomelki.loupgarou.events.LGVoteLeaderChange;
 import fr.leomelki.loupgarou.utils.VariousUtils;
 import lombok.Getter;
-import net.minecraft.server.v1_15_R1.DataWatcher;
-import net.minecraft.server.v1_15_R1.DataWatcherObject;
-import net.minecraft.server.v1_15_R1.DataWatcherRegistry;
-import net.minecraft.server.v1_15_R1.Entity;
-import net.minecraft.server.v1_15_R1.EntityArmorStand;
-import net.minecraft.server.v1_15_R1.IChatBaseComponent;
-import net.minecraft.server.v1_15_R1.PacketPlayOutEntityMetadata;
+import net.minecraft.server.v1_16_R3.DataWatcher;
+import net.minecraft.server.v1_16_R3.DataWatcherObject;
+import net.minecraft.server.v1_16_R3.DataWatcherRegistry;
+import net.minecraft.server.v1_16_R3.Entity;
+import net.minecraft.server.v1_16_R3.EntityArmorStand;
+import net.minecraft.server.v1_16_R3.IChatBaseComponent;
+import net.minecraft.server.v1_16_R3.PacketPlayOutEntityMetadata;
 
 public class LGVote {
 	@Getter LGPlayer choosen;
@@ -385,7 +385,7 @@ public class LGVote {
 							 noGravity = new WrappedDataWatcherObject(5, WrappedDataWatcher.Registry.get(Boolean.class)),
 							 customNameVisible = new WrappedDataWatcherObject(3, WrappedDataWatcher.Registry.get(Boolean.class)),
 							 customName = new WrappedDataWatcherObject(2, WrappedDataWatcher.Registry.get(IChatBaseComponent.class)),
-							 item = new WrappedDataWatcherObject(7, WrappedDataWatcher.Registry.get(net.minecraft.server.v1_15_R1.ItemStack.class));
+							 item = new WrappedDataWatcherObject(7, WrappedDataWatcher.Registry.get(net.minecraft.server.v1_16_R3.ItemStack.class));
 	private void showVoting(LGPlayer to, LGPlayer ofWho) {
 		int entityId = -to.getPlayer().getEntityId();
 		WrapperPlayServerEntityDestroy destroy = new WrapperPlayServerEntityDestroy();

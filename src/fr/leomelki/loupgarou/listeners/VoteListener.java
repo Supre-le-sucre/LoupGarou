@@ -12,10 +12,10 @@ public class VoteListener implements Listener{
 	@EventHandler
 	public void onClick(PlayerAnimationEvent e) {
 		if(e.getAnimationType() == PlayerAnimationType.ARM_SWING)
-			LGPlayer.thePlayer(e.getPlayer()).chooseAction();
+			if(e.getPlayer().getWorld().getName().equals("LoupGarou")) LGPlayer.thePlayer(e.getPlayer()).chooseAction();
 	}
 	@EventHandler
 	public void onBreak(BlockBreakEvent e) {
-		e.setCancelled(true);
+		if(e.getPlayer().getWorld().getName().equals("LoupGarou")) e.setCancelled(true);
 	}
 }
